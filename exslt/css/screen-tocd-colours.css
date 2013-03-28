@@ -1,0 +1,132 @@
+
+/* COLOUR SETTINGS */
+a {color: Midnightblue;} 
+a:visited {color: black;}
+a:hover {color: Cornflowerblue; } 
+a.nonexistent, a.badinterwiki {color: Slategray;} 
+h1 { color: MidnightBlue; }
+h1 a, h1 a:visited { color: MidnightBlue;}
+h1 a:hover {color: Cornflowerblue; } 
+h2, h3, h4, h5, h6 { color: MidnightBlue; }	
+h2, h3 { border-bottom: 2px solid MidnightBlue; }
+dt { border-bottom: 1px solid Midnightblue; }
+pre {
+	border: 1px dashed Midnightblue;
+	background-color: Ghostwhite;
+}
+input {
+    border: 1px Darkslateblue solid;
+    background-color: #F1F1ED; 
+    color: Black;
+}
+textarea, input[type=text], input[type=password] {
+    border: solid 1px Midnightblue;
+	background: #F1F1ED; 
+	color: Darkslateblue;
+}
+select, option {
+	background: #F1F1ED; 
+	color: Midnightblue;
+}
+#sisternav a , #sisternav a:hover, #sisternav li:hover, 
+#sisternav li:hover a, #sisternav #current a, 
+	#sisternav #current a:hover  { color: black; }
+#username a:hover {color: Aliceblue; } 
+#username li a { color: Midnightblue; }
+#sisternav #current a { color: black; }
+#sisternav #current a:hover { color: black;}
+#pagetrail a { color: Midnightblue; }
+#pagetrail li:after { 	color: Midnightblue; }
+*[dir="rtl"] #pagetrail li:after {	color: Midnightblue; }
+#navibar li.userlink { background: #F1F1ED; }
+#navibar a, #navibar a:visited { color: black;}
+#navibar li.current a { color: Midnightblue;}
+#navibar li:hover { background: black; }
+#navibar li.current, #navibar li.current:hover { color: Midnightblue;}
+#pageline {
+	border-bottom: 1px solid #9C9C9C;
+	background: Midnightblue;
+}
+.editbar select {
+    border: solid 1px Midnightblue;
+	background: white;
+	color: Darkslateblue;
+}
+.editbar option {
+	background: #F1F1ED; 
+	color: Midnightblue;
+}
+.editbar li {	color: Midnightblue; }
+#header .editbar { color: Midnightblue; }
+.extranav li { 	color: Darkslateblue;}
+.extranav li { color: Darkslateblue;}
+.editbar a, .editbar a:visited { color: Darkslateblue;} 
+.editbar a:hover {color: Cornflowerblue; } 
+.extranav a, .extranav a:visited { color: Darkslateblue;} 
+.extranav a:hover {color: Cornflowerblue; } 
+td { 
+	border-top: 1px solid Slategray; 
+	border-bottom: 1px solid Slategray; 
+	border-right: 0px solid black;
+	border-left: 0px solid black;
+	}
+.footnotes div { border-top: 1pt solid Midnightblue;}
+.info { color: Midnightblue; }
+.seperator { color: Midnightblue; }
+hr { background-color: Midnightblue; }
+strong.highlight { background-color: Ghostwhite; }
+.recentchanges table { color: white; }
+.recentchanges td {
+	border-bottom: 1pt solid Midnightblue;
+	background: white;
+}
+.rcdaybreak td { background: Royalblue; }
+.rcdaybreak td a { color: white; }
+.rctime { color: Darkgray; }
+.rceditor { color: Darkgray; }
+.rccomment { color: Midnightblue;}
+#preview { border-top: 8px solid Midnightblue; }
+#footer { background: #7597db; }
+#credits, #version, #timings{ color: #6C7680; }
+#message { 
+	border-bottom: 1px solid Midnightblue;
+	background: #F1F1ED; /* ubuntu near-white */
+}
+form.dialog {
+    border: solid 1px Midnightblue;
+    background-color: white; 
+    color: Midnightblue;
+}
+.dialog form {
+    border: solid 1px Midnightblue;
+    background-color: white; 
+    color: Midnightblue;
+}
+.diff-title { 
+	background-color: Royalblue;
+	color: white;
+ }
+.diff-added { background-color: white; }
+.diff-removed { background-color: white; }
+.diff-added span { background-color: Greenyellow; }
+.diff-removed span {	background-color: Lightcoral; }
+div.codearea { 
+	border: 1pt solid Midnightblue;
+	background-color: Ghostwhite;
+	color: black;
+}
+a.codenumbers { color: Midnightblue; }
+td.cal-workday { background-color: Ghostwhite; }
+td.cal-weekend {  background-color: Ghostwhite; }
+th.cal-header {
+    background-color: Midnightblue;
+    color: white;
+}
+TABLE.tip {
+    color: black;
+	border: 1px solid Skyblue;
+	background-color: Ghostwhite;
+}
+TH.tip {
+    background-color: Ghostwhite;
+}

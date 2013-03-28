@@ -1,0 +1,312 @@
+/* EXSLT color settings */
+
+a {color: #6d4c07;} 
+a:visited {color: #677872;}
+a:hover {color: tan; } 
+a.nonexistent, a.badinterwiki {color: Slategray;} 
+h1 { color: white; }
+h1 a, h1 a:visited { color: #973029;}
+h1 a:hover {color: tan; } 
+h2, h3, h4, h5, h6 { color: white; }	
+h2, h3 {  }
+dt { border-bottom: 1px solid lightgrey; }
+pre {
+	border: 1px dashed #6d4c07;
+	background-color: Ghostwhite;
+}
+input {
+    border: 1px #973029 solid;
+    background-color: #F1F1ED; 
+    color: #677872;
+}
+textarea, input[type=text], input[type=password] {
+    border: solid 1px #6d4c07;
+	background: #F1F1ED; 
+	color: #973029;
+}
+select, option {
+	background: #F1F1ED; 
+	color: #6d4c07;
+}
+#sisternav a , #sisternav a:hover, #sisternav li:hover, 
+#sisternav li:hover a, #sisternav #current a, 
+#sisternav #current a:hover  { color: #677872; }
+#username a:hover {color: #973029; } 
+#username li a { color: #6d4c07; }
+#sisternav #current a { color: #677872; }
+#sisternav #current a:hover { color: #677872;}
+#pagetrail a { color: #6d4c07; }
+#pagetrail li:after { 	color: #6d4c07; }
+*[dir="rtl"] #pagetrail li:after {	color: #6d4c07; }
+#navibar li.userlink { background: #E9E5D9; }
+#navibar a, #navibar a:visited { color: #677872;}
+#navibar li.current a { color: #6d4c07;}
+#navibar li:hover { background: #677872; }
+#navibar li.current, #navibar li.current:hover { color: #6d4c07;}
+#pageline {
+	border-bottom: 1px solid #9C9C9C;
+	background: #6d4c07;
+}
+.editbar select {
+    border: solid 1px #6d4c07;
+	background: white;
+	color: #973029;
+}
+.editbar option {
+	background: #F1F1ED; 
+	color: #6d4c07;
+}
+.editbar li {	color: #6d4c07; }
+#header .editbar { color: #6d4c07; }
+.extranav li { 	color: #973029;}
+.extranav li { color: #973029;}
+.editbar a, .editbar a:visited { color: #973029;} 
+.editbar a:hover {color: tan; } 
+.extranav a, .extranav a:visited { color: #973029;} 
+.extranav a:hover {color: tan; } 
+td { 
+	border-top: 1px solid Slategray; 
+	border-bottom: 1px solid Slategray; 
+	border-right: 0px solid #677872;
+	border-left: 0px solid #677872;
+	}
+.footnotes div { border-top: 1pt solid #6d4c07;}
+.info { color: #6d4c07; }
+.seperator { color: #6d4c07; }
+hr { background-color: #6d4c07; }
+strong.highlight { background-color: Ghostwhite; }
+.recentchanges table { color: white; }
+.recentchanges td {
+	border-bottom: 1pt solid #6d4c07;
+	background: white;
+}
+.rcdaybreak td { background: sienna; }
+.rcdaybreak td a { color: white; }
+.rctime { color: Darkgray; }
+.rceditor { color: Darkgray; }
+.rccomment { color: #6d4c07;}
+#preview { border-top: 8px solid #6d4c07; }
+#footer { 
+}
+#credits, #version, #timings{ color: #6C7680; }
+#message { 
+	border-bottom: 1px solid #6d4c07;
+	background: #F1F1ED; /* ubuntu near-white */
+}
+form.dialog {
+    border: solid 1px #6d4c07;
+    background-color: white; 
+    color: #6d4c07;
+}
+.dialog form {
+    border: solid 1px #6d4c07;
+    background-color: white; 
+    color: #6d4c07;
+}
+.diff-title { 
+	background-color: sienna;
+	color: white;
+ }
+.diff-added { background-color: white; }
+.diff-removed { background-color: white; }
+.diff-added span { background-color: Greenyellow; }
+.diff-removed span {	background-color: Lightcoral; }
+div.codearea { 
+	border: 1pt solid #6d4c07;
+	background-color: Ghostwhite;
+	color: #677872;
+}
+a.codenumbers { color: #6d4c07; }
+td.cal-workday { background-color: Ghostwhite; }
+td.cal-weekend {  background-color: Ghostwhite; }
+th.cal-header {
+    background-color: #6d4c07;
+    color: white;
+}
+TABLE.tip {
+    color: #677872;
+	border: 1px solid Skyblue;
+	background-color: Ghostwhite;
+}
+TH.tip {
+    background-color: Ghostwhite;
+}
+
+BODY {
+	background: white;
+	color: black;
+	border: 0px none white;
+	}
+
+/* this is to make Navigator fill the entire line */
+H1, #content {
+	border: 1px solid white;
+	}
+
+H1, H1 A:link, H1 A:visited, H1 A:active, H1 A:hover {
+    background: #401;
+	color: white;
+	}
+
+H2 {
+	border-top: 5px solid white;
+	}
+
+H2, H2 A:link, H2 A:visited, H2 A:active, H2 A:hover {
+	background: #041;
+	color: white;
+	}
+
+
+H3 {
+	border-top: 3px solid white;
+	}
+
+H3, H3 A:link, H3 A:visited, H3 A:active, H3 A:hover {
+	color: #041;
+	background: #EFE;
+	}
+
+#content TABLE {
+	border-collapse: collapse;
+	}
+
+#content TH {
+	background: #041;
+	color: white;
+	}
+
+#content TD {
+	background: #EFE;
+	color: black;
+    border: 1px solid #041;
+	}
+
+#content, #navigation {
+	background: #EFE;
+	color: black;
+	}
+
+HR {
+	color: #041;
+	background: #041;
+	}
+
+IMG, A:link IMG, A:visited IMG, A:hover IMG, A:active IMG {
+	border: 0px none white;
+	background: transparent;
+	}
+
+A:link, A:visited, A:active, A:hover {
+	color: #052;
+	background: transparent;
+	border: 0px none white;
+	}
+
+.note {
+	color: #333;
+	}
+
+.note A:link, .note A:visited, .note A:hover {
+    background: transparent;
+	color: #041;
+	}
+
+.error {
+	color: #C00;
+	}
+
+#colophon {
+	color: #333;
+	background: #FEE;
+	}
+
+#colophon A:link, #colophon A:visited, #colophon A:hover {
+	color: #401;
+	background: transparent;
+	}
+
+TD.implementations {
+	border-left: 1px solid #041;
+	}
+
+#menu {
+	background: #EEF;
+	color: #014;
+	}
+
+#menu P.level1, P.level1 A:link, P.level1 A:visited, P.level1 A:active P.level1 A:hover {
+	background: #014;
+	color: white;
+	}
+
+#menu P.level2, P.level2 A:link, P.level2 A:visited, P.level2 A:active P.level2 A:hover, 
+#menu P.level3, P.level3 A:link, P.level3 A:visited, P.level3 A:active P.level3 A:hover, 
+#menu P.level4, P.level4 A:link, P.level4 A:visited, P.level4 A:active P.level4 A:hover {
+	background: #EEF;
+	color: #014;
+	}
+
+
+P.level2 A:hover, P.level3 A:hover, P.level4 A:hover {
+	text-decoration: underline;
+	}
+
+
+
+/* text */
+OL OL LI {
+	list-style: lower-alpha;
+	}
+
+TH {
+	text-align: left;
+	}
+
+TD {
+	vertical-align: top;
+	}
+
+#content TH, #content TD {
+	}
+
+#content TH.rowhead, #content TD.rowhead {
+	text-align: left;
+	}
+
+H1 {
+	text-transform: uppercase;
+	}
+
+H2 {
+	text-transform: uppercase;
+	}
+
+H4 {
+	text-transform: lowercase;
+	}
+
+#menu {
+	text-transform: lowercase;
+	}
+
+#navigation TD {
+	text-transform: uppercase;
+	text-align: center;
+	}
+
+A.offsite {
+    text-decoration: underline;
+	}
+
+A, A.function, A.element {
+	text-decoration: none;
+	}
+
+.table-of-contents {
+	float:right;  
+	background:#F1F1ED; 
+	margin-top:  1px;
+	padding: 1em 1em 1em 1em;
+        border: 2px solid #401;;
+}

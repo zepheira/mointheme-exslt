@@ -1,0 +1,480 @@
+/*  screen.css - MoinMoin Default Styles
+
+Copyright (c) 2001, 2002, 2003 by Juergen Hermann
+Modified by Nir Soffer (technical theme), Mauricio Hernandez (ruleta theme)
+Heather Stern (ubuntu theme)
+*/
+
+body {
+    padding:0;
+    border:0;
+}
+
+/* override coloration of dialog buttons */
+input {
+    font-size: 1em;
+    font-family: Arial, Lucida Grande, sans-serif;
+    border: 1px solid black;
+	margin: 0.1em;
+/*	font-weight: bold;  */
+}
+
+textarea, input[type=text], input[type=password] {
+    /* inherit from input */
+    font-size: 1em;
+    font-family: Arial, Lucida Grande, sans-serif;
+    border: solid 1px black;
+}
+
+select, option {
+    /* inherit from input */
+    /* don't override font */
+    border: none;
+}
+
+/* user interface styles */
+
+#header {
+    margin: 0;
+    padding: 0;
+}
+
+#mastwrap {
+    background: url(../img/header.png) bottom left repeat-x; 
+}
+
+#masthead
+{
+   	position:relative;
+	background-image: url(../img/headerlogo.png);  
+	background-repeat: no-repeat;
+	background-position: 10px 10px;
+	border: 0px solid white;
+        height: 85px;
+}
+
+.table-of-contents {
+	float:right;  
+
+	background:#F1F1ED; 
+	margin: 0 0 1em 1em;
+	padding: 1em 1em 1em 1em;
+        border: 2px solid brown;
+}
+
+}
+
+#logo {
+        //display: none;                /* we'll show an image instead */
+        text-indent:-10000px;
+        margin:0;
+        /* contains image and/or text link */
+        float: left;
+        margin: 0 10px 0 0;
+        font-size: 2em;
+        line-height: 1.2em;
+        font-weight: bold;
+        padding: 0;
+}
+
+#logo img {
+    vertical-align: middle;
+}
+
+/* NOTE: Wiki name color */
+#logo a {
+    color: black;
+    text-decoration: none;
+}
+
+*[dir="rtl"] #logo {
+    float: right;
+}
+
+#username {
+    position: absolute;
+    right: 3px;
+    top: 1.8em; 
+    margin: 0 10px;
+    padding: 8px 0 0 0;
+    text-align: right;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+*[dir="rtl"] #username {
+    position: absolute;
+    left: 3px;
+    top: 1.8em; 
+    text-align: left;
+}
+
+#username li {
+    display: inline;
+    padding: 0 4px;
+}
+
+
+#username li:before {
+	content: " ";
+}
+
+#username li:first-child:before {
+	content: "";
+}
+
+#searchform {
+	position: absolute;
+	right: 3px;
+	top: 3px;
+	margin: 3px 6px;
+	padding: 0;
+	white-space: nowrap;
+	font-size: 13px;
+    font-family: Arial, Lucida Grande, sans-serif;
+}
+
+*[dir="rtl"] #searchform {
+	float: left;
+}
+
+#searchform form div {
+    display: inline;    
+	font-family: Arial, Lucida Grande, sans-serif;
+}
+
+#sisternav {
+	position:absolute;
+	bottom:0px;
+	right:0px;
+}
+
+#sisternav ul {
+	display:inline;
+	margin:0;
+	padding:10px 10px 0 1px;
+	list-style:none;
+}
+                  
+#sisternav li {
+	display:inline;
+	float:left;
+	background:url(../img/tab_off_ns1.png) no-repeat left top;
+	margin:0;
+	padding:0 0 0 5px;
+}
+
+#sisternav a {
+	float:left;
+	font-size:0.8em;
+	display:block;
+	background:url(../img/tab_off_ns2.png) no-repeat right top;
+	padding:8px 15px 3px 8px;
+	text-decoration:none;
+	font-weight:bold;
+}
+
+/* Commented Backslash Hack hides rule from IE5-Mac \*/
+#sisternav a {float:none;}
+/* End IE5-Mac hack */
+
+#sisternav li:hover, #sisternav li:hover a {
+	background-position:0% -163px;
+}
+
+#sisternav li:hover a {
+	background-position:100% -163px;
+}
+
+#sisternav #current {
+	background:url(../img/tab_on_ns1.png) no-repeat left top;                
+}
+
+#sisternav #current a {
+	background:url(../img/tab_on_ns2.png) no-repeat right top;
+	padding-bottom:4px;
+}
+
+#pagetrail {
+	white-space: nowrap;
+	position: absolute;
+	left: -28px;
+	top: 47px;
+	font-size: 0.9em;
+}
+
+*[dir="rtl"] #pagetrail {
+	clear: right;
+	text-align: right;
+}
+
+*[dir="ltr"] #pagetrail {
+	clear: left; 
+	text-align: left;
+}
+
+#pagetrail li {
+	float: left;
+	display: block;
+	padding: 2px 2px;
+	margin: 0 0 5px 0;
+}
+
+*[dir="rtl"] #pagetrail {
+	float: right;
+}
+
+/* XXX Warning: non-ascii characters! */
+/* NOTE: these are small things placed after your visited pages */
+#pagetrail li:after {
+	content: " » ";
+}
+
+*[dir="rtl"] #pagetrail li:after {
+	content: " « ";
+}
+
+#navibar {
+ 	clear: both; 
+	display: block;
+	margin: 0;
+	padding: 0 10px;
+	font-size: 0.8em;
+}
+
+#navibar li {
+	float: right;
+	display: block;
+	margin: 2px 2px;
+	padding: 2px 5px;
+	white-space: nowrap;
+}
+
+*[dir="rtl"] #navibar li {
+	float: left;
+}
+
+
+/* NOTE: the color for the Link inside the buttons of navibar */
+#navibar a, #navibar a:visited { text-decoration: none; }
+
+/* NOTE: this is the horizontal line across the page menu */
+#pageline {
+	clear: both;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	/* sync these values, line-height is needed for IE */
+	height: 4px;
+	line-height: 4px;
+	border-bottom: 1px solid black;
+}
+
+#pagelocation {
+	display: none;
+}
+
+.disabled {
+    /* IE ignore disabled attribute, but at least show items in gray */
+    /* disabled menu options */
+    color: DimGray;
+}
+
+.editbar {
+	margin: 0;
+	padding: 0 8px;
+	white-space: nowrap;
+	height: 26px;
+	font-size: 0.85em;
+}
+
+*[dir="rtl"] .editbar {
+	clear: right;
+}
+
+*[dir="ltr"] .editbar {
+	clear: left;
+}
+
+.editbar form, .editbar form div {
+    display: inline;
+	margin: 0;
+}
+
+.editbar select {
+    font-size: 0.9em;
+    font-family: Arial, Lucida Grande, sans-serif;
+    border: solid 1px black;
+	background: white;
+	color: black;
+}
+
+.editbar option {
+    font-size: 1em;
+    font-family: Arial, Lucida Grande, sans-serif;
+	background: #F1F1ED; 
+	color: black;
+}
+.editbar li {
+	float: left;
+	display: block;
+	padding: 0;
+	margin: 2px 6px;
+	color: black;
+}
+
+*[dir="rtl"] .editbar li {
+	float: right;
+}
+
+#header .editbar {
+	margin-top: 2px;
+}
+
+.extranav {
+	margin-top: 2px;
+	clear: both;
+	margin: 0;
+	padding: 0 8px;
+	white-space: nowrap;
+	background: white;
+	font-size: 0.85em;
+}
+
+.extranav li {
+	float: right;
+	display: block;
+	padding: 0;
+	margin: 2px 6px;
+}
+
+*[dir="rtl"] .extranav li {
+	float: left;
+}
+
+#ubuntulinks { 	text-align: center; }
+
+
+#message {
+	clear: both;
+	margin: 0;
+	padding: 5px 10px;
+	border-bottom: 1px solid black; 
+}
+
+#message p{
+	margin: 5px 0;
+	padding: 0;
+	font-weight: bold;
+}
+
+#message div.buttons {
+	font-weight: normal;
+}
+
+/* classic had form.dialog; modern doesn't. -- Heather */
+form.dialog {
+    margin: 0 15px;
+    border: solid 1px black;
+}
+
+.dialog form {
+    margin: 0 15px;
+    border: solid 1px black;
+}
+
+.dialog td {
+    border: none;
+    padding: 5px;
+}
+
+.dialog td.label {
+    text-align: right;
+    font-weight: bold;
+    width: 25%;
+}
+
+*[dir="rtl"] .dialog td.label {
+    text-align: left;
+}
+
+.dialog td.content input {
+    width: 100%;
+}
+
+#page {
+	clear: both;
+	background-color: white;
+	margin: 0 0 0 0;
+	/* to make room for side-menu use:
+	margin: 0 200px 0 0;  */
+	padding: 10px 30px 20px 30px;
+}
+
+/* We use here dumb css1 ids because of IE suckiness */
+#editor-textarea, #editor-comment {
+    width: 100%;
+}
+
+#preview {
+	border-top: 8px solid black;
+	margin-top: 30px;
+	padding: 20px 0px 10px 0px;
+	background: url(../img/draft.png);
+}
+
+#footer {
+	clear: both;
+	margin: 0;
+	padding: 0 20px;
+        line-height: 2em;
+	font-size: 11px;
+	height: 35px;
+	background: url(../img/footer.png) bottom left repeat-x;
+}
+
+#credits, #version, #timings{
+	margin: 3px 6px;
+	padding: 0;
+	text-align: center;
+	font-size: 10px;
+}
+
+#credits li, #timings li {
+	display: inline;
+	padding: 0 2px;
+	margin: 0 4px;
+}
+
+#credits img {
+	vertical-align: middle;
+}
+
+/* diffs from classic */
+.diff { width:99%; }
+.diff-header { font-weight: bold; }
+.diff-added { vertical-align: sub; }
+.diff-removed {	vertical-align: sub; }
+.searchresult dd span { font-weight: bold;}
+
+
+/* ============================== */
+#sidemenu {
+	position: absolute;	
+	right: 0px;
+	top: 120px;
+	width: 160px;
+	height:80%;
+	margin: 0 0 0 0;
+	padding: 1em;
+	//border-left: #C1B496 1px dashed;
+	font-family: sans-serif;
+	font-size: 0.8em;
+	color: Darkslateblue;
+}
+
+#sidemenu ul {
+	margin-left: 0px;
+	padding-left: 20px;    
+	list-style-image: url(../img/bullet.png);
+}
